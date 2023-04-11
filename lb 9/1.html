@@ -1,0 +1,23 @@
+<button onclick="alert ( date())">Показать год</button>
+
+<script>
+
+function date () {
+
+var data = new Date();
+
+if(data.getDate()<0) data.getDate() = "0"+data.getDate();
+
+if(data.getMonth()<0) data.getMonth() = "0"+data.getMonth();
+
+if(data.getHours()<0) data.getHours() = "0"+data.getHours();
+
+if(data.getMinutes()<0) data.getMinutes() = "0"+data.getMinutes();
+
+if(data.getSeconds()<0) data.getSeconds() = "0"+data.getSeconds();
+
+return (data.getDate() + "." + data.getMonth() + "." + data.getFullYear() + " " + data.getHours() + ":" + data.getMinutes() + ":" + data.getSeconds());
+
+}
+
+</script>
