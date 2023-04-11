@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Заголовок</title>
+    <style>
+      /* Стили для контейнера */
+      .container {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        height: 80%; /* высота контейнера в процентах от высоты окна браузера */
+      }
+      /* Стили для блоков */
+      .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2vw; /* размер шрифта в процентах от ширины экрана */
+        background-color: #f1f1f1;
+        border: 1px solid black;
+        width: 100%; /* ширина блока в процентах от ширины родительского элемента */
+      }
+      /* Стили для изображений */
+      .block img {
+        width: 30%; /* ширина изображения в процентах от ширины блока */
+        height: auto;
+      }
+      /* Стили для блоков 1 и 2 */
+      .block-1 {
+        grid-column: 1/6;
+        grid-row: 1/2;
+      }
+      .block-2 {
+        grid-column: 6/ span 6;
+        grid-row: 1/2;
+      }
+      /* Стили для блоков 3, 4 и 5 */
+      .block-3 {
+        grid-column: 1/ span 4;
+        grid-row: 2/3;
+      }
+      .block-4 {
+        grid-column: 5 / span 2;
+        grid-row: 2/3;
+      }
+      .block-5 {
+        grid-column: 7/12;
+        grid-row: 2/3;
+      }
+      /* Стили для блоков 6, 7 и 8 */
+      .block-6 {
+        grid-column: 1/ span 4;
+        grid-row: 3/3;
+      }
+      .block-7 {
+        grid-column: 5 / span 2;
+        grid-row: 3/3;
+      }
+      .block-8 {
+        grid-column: 7/12;
+        grid-row: 3/3;
+      }
+      /* Стили для шапки и подвала */
+      .header,
+      .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5%; /* высота шапки и подвала в процентах от высоты окна браузера */
+
+        background-color: #333;
+        color: #fff;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">Шапка</div>
+    <div class="container">
+      <div class="block block-1">
+        <img src="https://via.placeholder.com/100x100.png?text=1" alt="1" />
+        Блок 1
+      </div>
+      <div class="block block-2">
+        <img src="https://via.placeholder.com/100x100.png?text=2" alt="2" />
+        Блок 2
+      </div>
+      <div class="block block-3">
+        <img src="https://via.placeholder.com/100x100.png?text=3" alt="3" />
+        Блок 3
+      </div>
+<div class="block block-4">
+        <img src="https://via.placeholder.com/100x100.png?text=4" alt="4" />
+        Блок 4
+      </div>
+      <div class="block block-5">
+        <img src="https://via.placeholder.com/100x100.png?text=5" alt="5" />
+        Блок 5
+      </div>
+      <div class="block block-6">
+        <img src="https://via.placeholder.com/100x100.png?text=6" alt="6" />
+        Блок 6
+      </div>
+      <div class="block block-7">
+        <img src="https://via.placeholder.com/100x100.png?text=7" alt="7" />
+        Блок 7
+      </div>
+      <div class="block block-8">
+        <img src="https://via.placeholder.com/100x100.png?text=8" alt="8" />
+        Блок 8
+      </div>
+    </div>
+    <div class="footer">Подвал</div>
+  </body>
+</html>
